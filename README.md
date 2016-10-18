@@ -1,3 +1,15 @@
+## How do i "rewrite history" and reset a github repository to a specific commit?
+(which is what i did when i vendored this gem) - sc
+*this is dangerous in a shared environment but ok here*
+http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit
+
+```bash
+git reset --hard <old-commit-id>
+git push -f <remote-name> <branch-name>
+```
+
+
+
 # Diplomat
 [![Gem Version](https://badge.fury.io/rb/diplomat.svg)](http://badge.fury.io/rb/diplomat) [![Build Status](https://travis-ci.org/WeAreFarmGeek/diplomat.svg?branch=master)](https://travis-ci.org/WeAreFarmGeek/diplomat) [![Code Climate](https://codeclimate.com/github/johnhamelink/diplomat.png)](https://codeclimate.com/github/WeAreFarmGeek/diplomat) [![Dependency Status](https://gemnasium.com/WeAreFarmGeek/diplomat.svg)](https://gemnasium.com/WeAreFarmGeek/diplomat) [![Inline docs](http://inch-ci.org/github/wearefarmgeek/diplomat.svg?branch=master)](http://inch-ci.org/github/wearefarmgeek/diplomat)
 ### A HTTP Ruby API for [Consul](http://www.consul.io/)
